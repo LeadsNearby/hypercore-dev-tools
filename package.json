@@ -1,0 +1,17 @@
+{
+  "name": "@LeadsNearby/hypercore-dev-tools",
+  "version": "1.0.0-beta.0",
+  "description": "",
+  "repository": {
+    "url": "git://github.com/LeadsNearby/hypercore-dev-tools"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run install-vscode-snippets",
+    "install-vscode-snippets": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
