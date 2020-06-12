@@ -5,11 +5,13 @@
   "repository": {
     "url": "git://github.com/LeadsNearby/hypercore-dev-tools"
   },
+  "bin": {
+    "install-hypercore-snippets": "./bin/install-snippets.js"
+  },
   "main": "index.js",
   "scripts": {
-    "prepublishOnly": "babel src --out-dir ./ --source-maps",
-    "postinstall": "npm run install-vscode-snippets",
-    "install-vscode-snippets": "node index.js",
+    "prepublishOnly": "babel src --out-dir ./ --source-maps inline",
+    "postinstall": "node post-install.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
